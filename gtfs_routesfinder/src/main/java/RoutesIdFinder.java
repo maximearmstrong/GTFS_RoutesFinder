@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class TripsFinder extends Finder {
+public class RoutesIdFinder extends Finder {
 
-    public TripsFinder(File stopTimesFile, List<String> stops) {
-        super(stopTimesFile, stops);
+    public RoutesIdFinder(File tripsFile, List trips) {
+        super(tripsFile, trips);
     }
 
     @Override
@@ -18,9 +18,9 @@ public class TripsFinder extends Finder {
             Scanner sc = new Scanner(this.file);
             sc.nextLine();
             while (sc.hasNextLine()) {
-                String[] stopTimeLine = sc.nextLine().split(",");
-                if (!foundResults.contains(stopTimeLine[0]) && this.searched.contains(stopTimeLine[3]))
-                    foundResults.add(stopTimeLine[0]);
+                String[] tripLine = sc.nextLine().split(",");
+                if (!foundResults.contains(tripLine[0]) && this.searched.contains(tripLine[2]))
+                    foundResults.add(tripLine[0]);
             }
         } catch(FileNotFoundException e) {
             System.out.println("File not found");

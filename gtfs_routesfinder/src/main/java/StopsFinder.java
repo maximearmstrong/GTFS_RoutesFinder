@@ -1,6 +1,8 @@
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class StopsFinder extends Finder {
 
@@ -9,8 +11,23 @@ public class StopsFinder extends Finder {
     }
 
     @Override
-    protected ArrayList<String> find() {
-        return null;
+    protected List<String> find() {
+        List<String> foundResults = new ArrayList<>();
+        int stopIdLen = 4;
+
+        try {
+            Scanner sc = new Scanner(this.file);
+            sc.nextLine();
+            while (sc.hasNextLine()) {
+                String[] stopLine = sc.nextLine().split(",");
+                if (stopLine[0].length() == stopIdLen && this.searched.contains(stopLine[2]))
+                    foundResults.add(stopLine[0]);
+            }
+        } catch(FileNotFoundException e) {
+            System.out.println("File not found");
+        }
+
+        return foundResults;
     }
-    
+
 }

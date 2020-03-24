@@ -11,6 +11,14 @@ repositories {
     mavenCentral()
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'Main'
+    }
+    archivesBaseName = 'gtfs_routesfinder'
+    project.version=""
+}
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }

@@ -1,12 +1,12 @@
 import java.io.File;
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public abstract class Finder {
 
-    private File file;
-    private List<String> searched;
-    private List<String> foundResults;
+    protected File file;
+    protected List<String> searched;
+    protected List<String> foundResults;
 
     public Finder(File file, List<String> searched) {
         this.file = file;
@@ -14,6 +14,14 @@ public abstract class Finder {
         this.foundResults = find();
     }
 
-    abstract protected ArrayList<String> find();
+    public List<String> getFound() {
+        return this.foundResults;
+    }
+
+    public String toString() {
+        return String.join(", ", this.foundResults);
+    }
+
+    abstract protected List<String> find();
 
 }
