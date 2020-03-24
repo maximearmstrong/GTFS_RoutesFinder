@@ -1,8 +1,8 @@
 # GTFS_RoutesFinder
 
-Ce projet permet de trouver les lignes de métros `route_short_name` passant à une station `stop_name` dans un lot de données GTFS.
+Ce projet permet de trouver les lignes de métros `route_short_name` passant par une station `stop_name` dans un lot de données GTFS.
 
-Chaque élément de ce projet contient :
+Ce projet contient les éléments suivants :
   * GTFS_MTA_NYC_Transit_Subway : Répertoire du [lot de données GTFS du réseau de métro de NYC](http://web.mta.info/developers/developer-data-terms.html).
   * gtfs_routesfinder : Le projet contenant les fichiers sources Java et les fichier Gradle.
   * Result.txt : Un fichier texte contenant le résultat attendu (lignes de métro) lors de l'exécution du projet pour la station Grand Central - 42 St du métro de NYC.
@@ -41,7 +41,16 @@ java -jar ./gtfs_routesfinder/build/libs/gtfs_routesfinder.jar "./GTFS_MTA_NYC_T
 ```
 
 
-# Auteurs
+# États du projet
+
+Projet fonctionnel.
+
+## Améliorations à prévoir
+
+* Optimisation de la recherche des éléments, particulièrement pour la recherche concernant le `trip_id`, afin d'obtenir un meilleur temps d'exécution. 
+
+
+# Auteur
 
 Maxime Armstrong
 
