@@ -41,7 +41,7 @@ java -jar ./gtfs_routesfinder/build/libs/gtfs_routesfinder.jar "./GTFS_MTA_NYC_T
 ```
 
 
-# États du projet
+# État du projet
 
 Projet fonctionnel.
 
