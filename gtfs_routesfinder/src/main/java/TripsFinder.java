@@ -37,6 +37,7 @@ public class TripsFinder extends Finder {
             sc.nextLine();
             while (sc.hasNextLine()) {
                 String[] stopTimeLine = sc.nextLine().split(",");
+                stopTimeLine[0] = stopTimeLine[0].substring(0, stopTimeLine[0].length() - 15);
                 if (!foundElements.contains(stopTimeLine[0]) && this.searchedTerms.contains(stopTimeLine[3]))
                     foundElements.add(stopTimeLine[0]);
             }

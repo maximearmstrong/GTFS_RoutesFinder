@@ -43,12 +43,11 @@ java -jar ./gtfs_routesfinder/build/libs/gtfs_routesfinder.jar "./GTFS_MTA_NYC_T
 
 ## État du projet
 
-Projet fonctionnel.
+Projet fonctionnel. Temps d'exécution 1.5s.
 
 ### Améliorations à prévoir
 
-* Optimisation de la recherche des éléments, particulièrement pour la recherche concernant le `trip_id`, afin d'obtenir un meilleur temps d'exécution. 
-
+* Aucune amélioration prévue pour l'instant.
 
 ## Auteur
 

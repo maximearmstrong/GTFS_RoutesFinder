@@ -37,7 +37,7 @@ public class RouteIdsFinder extends Finder {
             sc.nextLine();
             while (sc.hasNextLine()) {
                 String[] tripLine = sc.nextLine().split(",");
-                if (!foundElements.contains(tripLine[0]) && this.searchedTerms.contains(tripLine[2]))
+                if (!foundElements.contains(tripLine[0]) && this.searchedTerms.contains(tripLine[1]))
                     foundElements.add(tripLine[0]);
             }
             sc.close();
