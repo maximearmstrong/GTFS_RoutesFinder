@@ -8,23 +8,23 @@ Ce projet contient les éléments suivants :
   * Result.txt : Un fichier texte contenant le résultat attendu (lignes de métro) lors de l'exécution du projet pour la station Grand Central - 42 St du métro de NYC.
 
 
-# Prérequis
+## Prérequis
 
 * JDK 11
 * Gradle
 * IntelliJ IDEA
 
 
-# Utilisation
+## Utilisation
 
 Pour utiliser le projet, vous aurez besoin d'un lot de données GTFS d'un réseau de métro (static data feeds) et du nom exact de la station `stop_name` pour laquelle vous cherches les lignes de métro.
 
 Pour exécuter le projet, vous devez passer l'emplacement du répertoire du lot de données GTFS en premier argument (args[0]) et le nom de la station en deuxième argument (args[1]).
 
 
-# Compilation et éxécution avec Gradle
+## Compilation et éxécution avec Gradle
 
-## Lignes de commandes
+### Lignes de commandes
 
 Débuter les commandes après vous être positionnés à la racine du projet.
 
@@ -41,16 +41,16 @@ java -jar ./gtfs_routesfinder/build/libs/gtfs_routesfinder.jar "./GTFS_MTA_NYC_T
 ```
 
 
-# État du projet
+## État du projet
 
 Projet fonctionnel.
 
-## Améliorations à prévoir
+### Améliorations à prévoir
 
 * Optimisation de la recherche des éléments, particulièrement pour la recherche concernant le `trip_id`, afin d'obtenir un meilleur temps d'exécution. 
 
 
-# Auteur
+## Auteur
 
 Maxime Armstrong
 
