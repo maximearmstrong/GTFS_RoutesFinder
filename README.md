@@ -53,4 +53,3 @@ Projet fonctionnel. Temps d'exécution 1.5s.
 
 Maxime Armstrong
 
-
